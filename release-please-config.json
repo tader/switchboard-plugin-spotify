@@ -1,0 +1,17 @@
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "bootstrap-sha": "00f2bdb7a9b7de3dedf9bfc1fe15af3c910ba05b",
+  "packages": {
+    ".": {
+      "release-type": "node",
+      "include-component-in-tag": false,
+      "extra-files": [
+        {
+          "type": "json",
+          "path": "plugins/spotify/plugin.json",
+          "jsonpath": "$.version"
+        }
+      ]
+    }
+  }
+}
