@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/tader/switchboard-plugin-spotify/compare/v1.1.0...v1.2.0) (2026-11-26)
+
+
+### Features
+
+* declare account-only Spotify Activity preview ([#2](https://github.com/tader/switchboard-plugin-spotify/issues/2)) ([cfb4f9c](https://github.com/tader/switchboard-plugin-spotify/commit/cfb4f9ca1b593809cb3223df7800839801eb5c2e))
+
 ## [1.1.0](https://github.com/tader/switchboard-plugin-spotify/compare/v1.0.0...v1.1.0) (2026-10-09)
 
 
