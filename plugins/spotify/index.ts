@@ -37,6 +37,14 @@ export default function setup(ctx: PluginContext) {
         docsUrl: 'https://developer.spotify.com/documentation/web-api',
         baseUrl: 'https://api.spotify.com/v1',
         allowedHosts: ['api.spotify.com'],
+        // Only audited data calls qualify; sign-in's identify() never enters capture.
+        outputPreviews: [{
+          origin: 'https://api.spotify.com',
+          method: 'GET' as const,
+          path: '/v1/me',
+          authMethods: ['oauth'],
+          fields: { account_id: { maxBytes: 128 } },
+        }],
         // Community-maintained, kept in sync with Spotify's reference.
         openapi: 'https://raw.githubusercontent.com/sonallux/spotify-web-api/main/fixed-spotify-open-api.yml',
         authMethods: [
